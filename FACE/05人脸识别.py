@@ -17,7 +17,7 @@ def face_detect_demo():
     cv.imshow('result', img)
 
 # 加载图像
-img = cv.imread('k1.jpg')
+img = cv.imread('k1.pgm')
 if img is None:
     print("Error: 图像文件未找到或无法加载！")
     exit()

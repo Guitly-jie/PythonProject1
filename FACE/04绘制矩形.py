@@ -1,5 +1,5 @@
 import cv2 as cv
-img=cv.imread('k1.jpg')
+img=cv.imread('k1.pgm')
 x,y,w,h=100,100,100,100
 cv.rectangle(img,(x,y,x+w,x+y),color=(255,0,0),thickness=10)
 

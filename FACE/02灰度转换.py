@@ -1,5 +1,5 @@
 import cv2 as cv
-img =cv.imread('k1.jpg')
+img =cv.imread('k1.pgm')
 #灰度转换
 gray1_img =cv.cvtColor(img,cv.COLOR_RGB2BGR)
 gray2_img =cv.cvtColor(img,cv.COLOR_RGB2YCrCb)

@@ -1,5 +1,5 @@
 import cv2 as cv
-img=cv.imread('k1.jpg')
+img=cv.imread('k1.pgm')
 resize_img=cv.resize(img,dsize=(2000,2400))
 
 cv.imshow('resize_img',resize_img)
