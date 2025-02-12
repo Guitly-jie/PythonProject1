@@ -14,7 +14,7 @@ def face_detect_demo(img):
         cv.rectangle(img, (x, y), (x + w, y + h), color=(0, 255, 255), thickness=2)
         cv.circle(img, center=(x + w // 2, y + h // 2), radius=w // 2, color=(0, 255, 255), thickness=2)
     # 显示结果
-
+    cv.imshow('result',img)
 
 cap = cv.VideoCapture('video.mp4')
 while True:
@@ -23,7 +23,7 @@ while True:
     if not flag:
         break
     face_detect_demo(frame)
-    if ord('F') == cv.waitKey(0):
+    if ord('F') == cv.waitKey(10):
         break
 cv.destroyAllWindows()
 cap.release()
