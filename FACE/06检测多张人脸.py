@@ -18,7 +18,7 @@ def face_detect_demo():
     cv.imshow('result', img)
 
 
-img = cv.imread('k3.jpg')
+img = cv.imread('k3.pgm')
 face_detect_demo()
 
 # 等待按键并关闭窗口

@@ -5,7 +5,7 @@ import os
 recogizer=cv2.face.LBPHFaceRecognizer_create()
 recogizer.read('train/trainer.yml')
 #准备识别的图片
-img=cv2.imread('q1.pgm')
+img=cv2.imread('z.pgm')
 gray=cv2.cvtColor(img,cv2.COLOR_BGR2GRAY)
 face_detector = cv2.CascadeClassifier(cv2.data.haarcascades +
                     'haarcascade_frontalface_default.xml')
